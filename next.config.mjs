@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
-//this is to make it in work on both local and github.io
-const isProd = process.env.NODE_ENV === 'production';
+
+// Always set repo name (for GitHub Pages)
+const repo = '/accounting-site';
 
 const nextConfig = {
-  reactStrictMode: true,
-  output: "export",                     // 👈 important
-  basePath: isProd ? '/accounting-site' : '',        // 👈 repo name
-  assetPrefix: isProd ? '/accounting-site/' : '',
-  trailingSlash: true,
+  output: 'export',     // required for static export
+    basePath: '',         // must be empty for /docs deployment
+    assetPrefix: '',      // must be empty for /docs deployment
+    reactStrictMode: true,
   images: {
-    unoptimized: true,                  // 👈 avoids Next.js image optimizer (needs a server)
+    unoptimized: true,     // 👈 avoids Next.js image optimizer (needs a server)
   },
 };
 
 export default nextConfig;
-
