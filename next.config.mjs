@@ -5,8 +5,8 @@ const repo = '/accounting-site';
 
 const nextConfig = {
   output: 'export',     // required for static export
-    basePath: '',         // must be empty for /docs deployment
-    assetPrefix: '',      // must be empty for /docs deployment
+    basePath: '/accounting-site',         // must be empty for /docs deployment
+    assetPrefix: '/accounting-site/',      // must be empty for /docs deployment
     reactStrictMode: true,
   images: {
     unoptimized: true,     // 👈 avoids Next.js image optimizer (needs a server)
