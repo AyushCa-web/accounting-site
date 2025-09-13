@@ -3,10 +3,14 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/accounting-site' : '',
-  assetPrefix: isProd ? '/accounting-site/' : '',
   reactStrictMode: true,
+  output: "export",                     // 👈 important
+  basePath: isProd ? '/accounting-site' : '',        // 👈 repo name
+  assetPrefix: isProd ? '/accounting-site/' : '',
+  images: {
+    unoptimized: true,                  // 👈 avoids Next.js image optimizer (needs a server)
+  },
 };
 
 export default nextConfig;
+
