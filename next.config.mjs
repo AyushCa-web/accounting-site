@@ -5,7 +5,7 @@ const repo = '/accounting-site';
 
 const nextConfig = {
   output: 'export',     // required for static export
-    basePath: '/accounting-site',         // must be empty for /docs deployment
+    basePath: '',         // must be empty for /docs deployment
     assetPrefix: '/accounting-site/',      // must be empty for /docs deployment
     reactStrictMode: true,
   images: {
