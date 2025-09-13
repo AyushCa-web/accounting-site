@@ -7,6 +7,7 @@ const nextConfig = {
   output: "export",                     // 👈 important
   basePath: isProd ? '/accounting-site' : '',        // 👈 repo name
   assetPrefix: isProd ? '/accounting-site/' : '',
+  trailingSlash: true,
   images: {
     unoptimized: true,                  // 👈 avoids Next.js image optimizer (needs a server)
   },
