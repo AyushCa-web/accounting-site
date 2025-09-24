@@ -31,7 +31,7 @@ export default function Home() {
       <ContactForm /> {/* already has id="contact-form" */}
 
       <footer className="bg-gray-100 text-center py-6 text-sm text-gray-500">
-        <p>&copy; 2025 Udaan · All Rights Reserved.</p>
+        <p>&copy; 2025 Udaan Information Services LLP · All Rights Reserved.</p>
         <p className="mt-1 text-xs text-gray-400 italic">
           Website created by Sopnesh Gandhi
         </p>
