@@ -130,7 +130,7 @@ export default function ContactForm() {
         </form>
 
         <p className="text-sm text-gray-500 mt-6">
-          📧 Or email us directly at <strong>youremail@example.com</strong>
+          📧 Or email us directly at <strong>info@udaanllp.com</strong>
           <br />
           Your information is <span className="font-semibold">100% confidential</span>.
         </p>
